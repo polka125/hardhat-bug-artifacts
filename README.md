@@ -3,10 +3,10 @@ This is a repository for bug artifacts for the Hardhat tool
 
 ### Steps to build: 
 
-1. `git clone {todo}`
+1. `git clone https://github.com/polka125/hardhat-bug-artifacts.git`
 2. put your remote api key to the file `RPC_TOKEN`
 3. `docker build -t hardhat_bug .`
-4. `docker run -v ./host_logs:/app/logs -it hardhat_bug`
+4. `docker run -v ./host_logs:/app/logs -it hardhat_bug`. It will take some time, logs will gradually apear in the `host_logs` folder
 5. `find ./host_logs -type f -print0 | sort -z | xargs -0 shasum -a 1`
 
 
